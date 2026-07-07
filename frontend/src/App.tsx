@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { StellarWalletsKit, KitEventType } from '@creit.tech/stellar-wallets-kit';
 import { defaultModules } from '@creit.tech/stellar-wallets-kit/modules/utils';
-import * as StellarSdk from '@stellar/stellar-sdk';
 import './App.css';
-
-const CONTRACT_ID = 'CAWS7IF54J7ZFJ4ACANVYNVCFZKPDWWTYDOLML2FJGHBSJBMDRN36K65';
-const TESTNET_RPC = 'https://soroban-testnet.stellar.org';
 
 // Initialize the kit once outside the component
 StellarWalletsKit.init({ modules: defaultModules() });
@@ -85,7 +81,6 @@ function App() {
     try {
       // 1. Simulate the Soroban Transaction XDR construction
       // In a real app, we'd use the Soroban SDK to build the call to the 'donate' function
-      const txXdr = "AQIDAAAAAAAAAAAAAAAAAA..."; // Mock XDR for demonstration
       
       // 2. Sign the transaction using the Wallets Kit
       setStatus({ type: 'info', message: 'Please sign the transaction in your wallet...' });
