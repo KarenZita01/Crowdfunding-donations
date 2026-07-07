@@ -31,6 +31,7 @@ A real-time crowdfunding application built on Stellar using Soroban smart contra
 - **Contract Address**: `CAWS7IF54J7ZFJ4ACANVYNVCFZKPDWWTYDOLML2FJGHBSJBMDRN36K65`
 - **Network**: Testnet
 - **Live Demo**: [https://crowdfunding-donations.vercel.app](https://crowdfunding-donations.vercel.app)
+- **Example Transaction Hash**: `3a607a8b1300c1f41ec0819c40df519fe4f21d21f948e33af610ed611bf888ec`
 
 ## 📸 Screenshots
 ![Wallet Options](frontend/public/screenshots/wallet-options.png)
